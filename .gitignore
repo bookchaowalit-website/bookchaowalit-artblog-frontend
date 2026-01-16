@@ -1,0 +1,34 @@
+# Node and Next.js
+node_modules/
+.next/
+out/
+/.vercel/
+.env.local
+.env.*
+.DS_Store
+.vscode/
+.idea/
+coverage/
+npm-debug.log*
+.yarn-integrity
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Build outputs
+dist/
+build/
+
+# Mac
+.DS_Store
+
+# Editor folders
+*.sublime-workspace
+*.sublime-project
+
+# Optional: lock files if you don't want to commit them (usually keep them)
+# package-lock.json
+# yarn.lock
+
+.env
