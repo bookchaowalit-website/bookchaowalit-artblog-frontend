@@ -11,11 +11,11 @@
     "dependencies": {
         "@mdx-js/loader": "^3.0.0",
         "@mdx-js/react": "^3.0.0",
-        "@next/mdx": "^16.1.6",
+        "@next/mdx": "^15.5.9",
         "@tailwindcss/typography": "^0.5.9",
         "autoprefixer": "^10.4.14",
         "gray-matter": "^4.0.3",
-        "next": "^16.1.6",
+        "next": "^15.5.9",
         "next-mdx-remote": "^6.0.0",
         "postcss": "^8.4.24",
         "react": "^18",
