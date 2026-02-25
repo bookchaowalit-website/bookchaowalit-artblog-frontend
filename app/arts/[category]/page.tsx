@@ -4,9 +4,9 @@ import ArtLayout from '@/components/ArtLayout'
 import Meta from '@/components/Meta'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     category: string
-  }
+  }>
 }
 
 const categories = [
@@ -634,7 +634,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const category = categories.find(cat => cat.id === params.category)
+  const { category: categoryId } = await params
+  const category = categories.find(cat => cat.id === categoryId)
   if (!category) return {}
 
   return {
@@ -649,7 +650,8 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default async function ArtPage({ params }: PageProps) {
-  const category = categories.find(cat => cat.id === params.category)
+  const { category: categoryId } = await params
+  const category = categories.find(cat => cat.id === categoryId)
 
   if (!category) {
     notFound()
