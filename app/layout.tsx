@@ -19,6 +19,55 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+  {/* Structured Data for SEO */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: 'Artblog',
+        url: 'https://bookchaowalit-artblog.vercel.app',
+        description: 'Artblog by Bookchaowalit - A modern web application',
+        applicationCategory: 'UtilitiesApplication',
+        operatingSystem: 'Web',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD'
+        },
+        author: {
+          '@type': 'Person',
+          name: 'Bookchaowalit',
+          url: 'https://bookchaowalit.com'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Bookchaowalit',
+          url: 'https://bookchaowalit.com'
+        }
+      })
+    }}
+  />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Artblog',
+        url: 'https://bookchaowalit-artblog.vercel.app',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://bookchaowalit-artblog.vercel.app/more-projects',
+          'query-input': 'required name=search_term'
+        }
+      })
+    }}
+  />
+
+
         <Header />
         <main className="min-h-screen">
           {children}
