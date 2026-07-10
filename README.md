@@ -62,3 +62,9 @@ Deploy to Vercel with `vercel.json` configuration.
 - Tailwind CSS
 - TypeScript
 - Vercel
+
+## Related
+
+- **Mobile App:** [bookchaowalit-artblog-mobile](https://github.com/bookchaowalit-mobile/bookchaowalit-artblog-mobile)
+- **Portfolio:** [bookchaowalit.com](https://bookchaowalit.com)
+
