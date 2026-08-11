@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -53,7 +55,7 @@ export default function AboutPage() {
       </div>
 
       <div className="text-center mt-12">
-        <a
+        <Link
           href="/"
           className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium"
         >
@@ -61,7 +63,7 @@ export default function AboutPage() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
           กลับหน้าหลัก
-        </a>
+        </Link>
       </div>
     </div>
   )

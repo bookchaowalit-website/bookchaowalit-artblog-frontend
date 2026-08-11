@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bookchaowalit-artblog.vercel.app'),
   title: 'Creative Arts Knowledge',
   description: 'ค้นพบความรู้เกี่ยวกับศิลปะและงานสร้างสรรค์ต่างๆ จากคำจำกัดความ ไปจนถึงเทคนิคและเครื่องมือ',
 }

@@ -17,6 +17,9 @@ export default function Header() {
             <Link href="/categories" className="text-gray-700 hover:text-gray-900">
               Categories
             </Link>
+            <Link href="/posts" className="text-gray-700 hover:text-gray-900">
+              Blog
+            </Link>
             <Link href="/about" className="text-gray-700 hover:text-gray-900">
               About
             </Link>
